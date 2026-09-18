@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "Selected research and engineering projects in computational optical imaging, medical AI, and biomedical device design.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -64,16 +64,17 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-graduated-from-johns-hopkins-with-a-b-s-in-biomedical-engineering-amp-amp-computer-science-and-received-the-kasf-scholarship-award",
+          title: 'Graduated from Johns Hopkins with a B.S. in Biomedical Engineering &amp;amp;amp; Computer Science,...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-our-paper-adaptive-inference-for-medical-vision-transformers-was-accepted-to-midl-2025-co-first-author",
+          title: 'Our paper Adaptive Inference for Medical Vision Transformers was accepted to MIDL 2025...',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-started-my-ph-d-in-biomedical-engineering-at-johns-hopkins-university-joining-the-computational-biophotonics-lab-with-prof-nicholas-durr",
+          title: 'Started my Ph.D. in Biomedical Engineering at Johns Hopkins University, joining the Computational...',
+          description: "",
+          section: "News",},{id: "news-flowinpaint-our-work-on-robust-hemoglobin-measurement-via-microscopic-flow-efficient-video-inpainting-has-been-submitted-to-miccai-2026-co-first-author-microscope",
+          title: 'FlowInpaint, our work on robust hemoglobin measurement via microscopic flow-efficient video inpainting, has...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
@@ -125,14 +126,28 @@ ninja.data = [{
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%68%6C%65%65%32%36%37@%6A%68.%65%64%75", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://github.com/hyunseolee43", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/hyunseolee-emily", "_blank");
+        },
+      },{
+        id: 'social-orcid',
+        title: 'ORCID',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://orcid.org/0009-0007-3074-9580", "_blank");
         },
       },{
         id: 'social-rss',
@@ -146,14 +161,7 @@ ninja.data = [{
         title: 'Google Scholar',
         section: 'Socials',
         handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
+          window.open("https://scholar.google.com/citations?user=f1OTie0AAAAJ", "_blank");
         },
       },{
       id: 'light-theme',
