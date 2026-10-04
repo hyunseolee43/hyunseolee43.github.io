@@ -8,7 +8,7 @@ middle_name:
 last_name: Lee
 contact_note: hlee267@jh.edu (Email) | 410-336-0453
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Hyun Seo (Emily) Lee — biomedical engineering PhD student at Johns Hopkins University,
+  Hyun Seo (Emily) Lee, biomedical engineering PhD student at Johns Hopkins University,
   working on smartphone-based nailfold capillaroscopy and non-invasive hemoglobin estimation
   in Dr. Nicholas Durr's Computational Biophotonics Lab.
 footer_text: >
@@ -622,9 +622,10 @@ third_party_libraries:
 # Get external JSON data
 # -----------------------------------------------------------------------------
 
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
+# jekyll_get_json disabled so the CV page renders from _data/cv.yml instead of the template's resume.json
+# jekyll_get_json:
+#   - data: resume
+#     json: assets/json/resume.json # it can also be an url
 
 jsonresume:
   - basics

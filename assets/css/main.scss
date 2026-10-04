@@ -46,3 +46,54 @@ a:hover { text-decoration: underline; }
   box-shadow: 0 8px 24px rgba(65, 120, 178, 0.14);
 }
 ::selection { background: rgba(65, 120, 178, 0.18); }
+
+
+/* ===================== Smaller social icons (home) ===================== */
+.social .contact-icons {
+  font-size: 1.9rem;
+}
+.social .contact-icons a img {
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-bottom: 0.4rem;
+}
+.social .contact-icons a svg {
+  width: 1.8rem;
+  height: 1.9rem;
+  margin-bottom: 0.3rem;
+}
+.social .contact-icons a svg image {
+  width: 1.8rem;
+}
+
+/* ===================== Minimal blog ===================== */
+.header-bar {
+  padding-top: 1rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+.header-bar h1 {
+  font-size: 2.3rem;
+  margin-bottom: 0.25rem;
+}
+.header-bar h2 {
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+}
+.tag-category-list {
+  padding-top: 0.5rem;
+  font-size: 0.9rem;
+}
+.post-list li {
+  padding-top: 1.1rem;
+  padding-bottom: 1.1rem;
+}
+.post-list li h3,
+.post-list li .post-title {
+  font-size: 1.25rem;
+  margin: 0.15rem 0;
+}
+.post-list li .post-meta {
+  font-size: 0.8rem;
+}
