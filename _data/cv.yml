@@ -34,9 +34,6 @@
 - title: Selected Publications
   type: time_table
   contents:
-    - year: 2026
-      items:
-        - "L. Huang, M. Morakis, **H. Lee***, M. Golhar, M. Taylor-Williams, S. Ali, G. McKay, L. Pecker, N. Durr. *FlowInpaint: Robust Hemoglobin Measurement via Microscopic Flow Efficient Video Inpainting.* **Submitted, MICCAI 2026.** (*equal contribution)"
     - year: 2025
       items:
         - "J. Byun*, **H. Lee***, J. Shuff, R. Venkatesh, N. Shekhawat, K. Parikh, R. Chellappa. *Adaptive Inference for Medical Vision Transformers: When to Reduce Tokens and When to Exit Early.* **Medical Imaging with Deep Learning (MIDL) 2025.** (*equal contribution)"
