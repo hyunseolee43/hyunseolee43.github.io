@@ -64,7 +64,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-graduated-from-johns-hopkins-with-a-b-s-in-biomedical-engineering-amp-amp-computer-science-and-received-the-kasf-scholarship-award",
+            },},{id: "news-ocusound-our-low-cost-at-home-tonometer-for-glaucoma-monitoring-won-1st-place-at-the-hopkins-new-venture-challenge",
+          title: 'OcuSound, our low-cost at-home tonometer for glaucoma monitoring, won 1st place at the...',
+          description: "",
+          section: "News",},{id: "news-graduated-from-johns-hopkins-with-a-b-s-in-biomedical-engineering-amp-amp-computer-science-and-received-the-kasf-scholarship-award",
           title: 'Graduated from Johns Hopkins with a B.S. in Biomedical Engineering &amp;amp;amp; Computer Science,...',
           description: "",
           section: "News",},{id: "news-our-paper-adaptive-inference-for-medical-vision-transformers-was-accepted-to-midl-2025-co-first-author",
@@ -72,9 +75,6 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-started-my-ph-d-in-biomedical-engineering-at-johns-hopkins-university-joining-the-computational-biophotonics-lab-with-prof-nicholas-durr",
           title: 'Started my Ph.D. in Biomedical Engineering at Johns Hopkins University, joining the Computational...',
-          description: "",
-          section: "News",},{id: "news-flowinpaint-our-work-on-robust-hemoglobin-measurement-via-microscopic-flow-efficient-video-inpainting-has-been-submitted-to-miccai-2026-co-first-author-microscope",
-          title: 'FlowInpaint, our work on robust hemoglobin measurement via microscopic flow-efficient video inpainting, has...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
