@@ -34,10 +34,10 @@
 - title: Selected Publications
   type: time_table
   contents:
-    - year: 2025
+    - year: 2026
       items:
-        - "J. Byun*, **H. Lee***, J. Shuff, R. Venkatesh, N. Shekhawat, K. Parikh, R. Chellappa. *Adaptive Inference for Medical Vision Transformers: When to Reduce Tokens and When to Exit Early.* **Medical Imaging with Deep Learning (MIDL) 2025.** (*equal contribution)"
-        - "V. Wong, B. Miller, **H. S. Lee**, E. Leow, N. Yan, I. Kroumov, A. Nalla, K. Parikh, N. Durr. *Patient Perspective on Home Tonometry Among United States and Indian Populations.* Under Review, ARVO 2025."
+        - "V. W. Wong, E. C. Kelly, E. Leow, I.-A. Kroumov, N. Yan, B. Miller, **H. S. Lee**, S. Gottipati, R. Venkatesh, A. L. Robin, S. Kavitha, T. V. Johnson, S. Upadhyaya, K. Parikh. *Patient Perspectives on Home Tonometry Among United States and Indian Populations.* [Investigative Ophthalmology & Visual Science 67, 2316 (ARVO 2026)](https://iovs.arvojournals.org/article.aspx?articleid=2813719)."
+        - "J. Byun*, **H. Lee***, J. Shuff, R. Venkatesh, N. Shekhawat, K. Parikh, R. Chellappa. *Adaptive Inference for Medical Vision Transformers: When to Reduce Tokens and When to Exit Early.* **Medical Imaging with Deep Learning (MIDL) 2026.** (*equal contribution)"
 
 - title: Research Experience
   type: time_table
