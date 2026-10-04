@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
+        },{id: "nav-cv",
+          title: "cv",
+          description: "Curriculum vitae of Hyun Seo (Emily) Lee — PhD student in Biomedical Engineering at Johns Hopkins University, Computational Biophotonics Lab.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/cv/";
+          },
         },{id: "nav-blog",
           title: "blog",
           description: "",
