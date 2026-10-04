@@ -3,22 +3,22 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about",
-    title: "about",
+    id: "nav-home",
+    title: "home",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-blog",
-          title: "blog",
-          description: "",
+  },{id: "nav-about-me",
+          title: "about me",
+          description: "A bit more about who I am and how I got here.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/blog/";
+            window.location.href = "/about/";
           },
         },{id: "nav-experience",
           title: "experience",
-          description: "A fuller look at my research, the things I&#39;ve built, and the path that got me here.",
+          description: "My research, the things I&#39;ve built, and where I&#39;ve worked.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/experience/";
@@ -30,19 +30,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-projects",
-          title: "projects",
-          description: "Selected research and engineering projects in computational optical imaging, medical AI, and biomedical device design.",
+        },{id: "nav-blog",
+          title: "blog",
+          description: "",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/projects/";
-          },
-        },{id: "nav-cv",
-          title: "cv",
-          description: "Curriculum vitae of Hyun Seo (Emily) Lee — PhD student in Biomedical Engineering at Johns Hopkins University, Computational Biophotonics Lab.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/cv/";
+            window.location.href = "/blog/";
           },
         },{id: "post-monte-carlo-simulation-for-light-transport-in-tissue",
         
