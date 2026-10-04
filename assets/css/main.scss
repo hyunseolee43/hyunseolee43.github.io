@@ -23,3 +23,26 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+
+/* ===================== Custom theme: pastel blue + typography ===================== */
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+}
+h1, h2, h3, h4, h5, h6, .post-title, .edu-deg {
+  font-family: "Fraunces", Georgia, "Times New Roman", serif;
+  letter-spacing: 0.2px;
+}
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+.card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(65, 120, 178, 0.07);
+}
+.profile img {
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(65, 120, 178, 0.14);
+}
+::selection { background: rgba(65, 120, 178, 0.18); }

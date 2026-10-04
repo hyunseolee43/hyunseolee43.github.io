@@ -52,7 +52,7 @@ This isn't an obscure problem. I run into the same issue building a smartphone-b
 Skin is a layered, turbid medium. From the surface down:
 
 - **Epidermis** (~60–120 µm): protective barrier; contains melanocytes that produce **melanin** in melanosomes. Melanin is the dominant absorber in the visible range and the source of skin's color variation.
-- **Dermis** (~90% of total thickness): collagen-and-elastin matrix, vascularized — this is where **hemoglobin** lives, and where most of the optical path length accumulates.
+- **Dermis** (~90% of total thickness): collagen-and-elastin matrix, vascularized, this is where **hemoglobin** lives, and where most of the optical path length accumulates.
 - **Hypodermis**: subcutaneous fat, larger nerves and vessels, and mostly invisible to short-wavelength visible light.
 
 </div>
@@ -68,11 +68,11 @@ The sebum layer of the epidermis has a refractive index of about 1.5; air is abo
 
 Absorption is governed by the absorption coefficient $$\mu_a(\lambda)$$, and at visible wavelengths it's dominated by two chromophores:
 
-**Melanin** (epidermis). Its absorption falls roughly exponentially with wavelength — high in the UV/blue, much lower in the NIR. Eumelanin (brown/black) and pheomelanin (red/yellow) are produced in different ratios across pigmentations. Critically, **melanocyte concentration doesn't change much with skin tone** — what changes is melanosome size, number, and the resulting volume fraction of melanin in the epidermis. Lower-pigmented skin sits around 1–2% melanosome volume fraction; darker skin can reach 40%+. That's a 20× swing in epidermal absorption from the same anatomy.
+**Melanin** (epidermis). Its absorption falls roughly exponentially with wavelength, high in the UV/blue, much lower in the NIR. Eumelanin (brown/black) and pheomelanin (red/yellow) are produced in different ratios across pigmentations. Critically, **melanocyte concentration doesn't change much with skin tone**, what changes is melanosome size, number, and the resulting volume fraction of melanin in the epidermis. Lower-pigmented skin sits around 1–2% melanosome volume fraction; darker skin can reach 40%+. That's a 20× swing in epidermal absorption from the same anatomy.
 
 **Hemoglobin** (dermis). Both oxy- and deoxy-Hb have characteristic absorption peaks: a strong **Soret band around 400–420 nm** and **green–yellow bands around 540–600 nm**. At 660 nm, deoxy-Hb absorbs more than oxy-Hb (this is the foundation of pulse oximetry). At 940 nm, the relationship inverts.
 
-Putting these together explains the pulse-ox bias quantitatively: at 660 nm, the red light has to traverse epidermal melanin first, and this loss is much larger for higher-pigmented skin than for lower. At 940 nm, melanin barely matters. So the ratio that the device interprets as oxygen saturation is partly driven by epidermal melanin — a signal it has no way to separate.
+Putting these together explains the pulse-ox bias quantitatively: at 660 nm, the red light has to traverse epidermal melanin first, and this loss is much larger for higher-pigmented skin than for lower. At 940 nm, melanin barely matters. So the ratio that the device interprets as oxygen saturation is partly driven by epidermal melanin, a signal it has no way to separate.
 
 ### Scattering
 
@@ -81,7 +81,7 @@ The remaining photons scatter on their way through tissue:
 - **Mie scattering** dominates in the dermis, driven by filamentous proteins like collagen (and keratin in the epidermis) when scatterer size is comparable to wavelength.
 - **Rayleigh scattering** dominates when scatterers are much smaller than wavelength.
 
-The balance of Mie and Rayleigh, combined with absorption, determines the **effective optical path** that a photon takes — and most of that path is in the dermis.
+The balance of Mie and Rayleigh, combined with absorption, determines the **effective optical path** that a photon takes, and most of that path is in the dermis.
 
 ## Measurement technique 1: Diffuse Reflectance Spectroscopy (DRS)
 
@@ -93,17 +93,17 @@ $$
 R_d(\lambda) = \frac{I_{\text{skin}}(\lambda) - I_{\text{background}}(\lambda)}{I_{\text{standard}}(\lambda) - I_{\text{background}}(\lambda)}
 $$
 
-where $$I_{\text{standard}}$$ is measured against a known reflectance standard. From $$R_d(\lambda)$$ you invert to recover $$\mu_a$$ and $$\mu_s'$$ — typically using lookup tables built from Monte Carlo simulations of the specific probe geometry, since closed-form analytical models don't handle layered turbid media well.
+where $$I_{\text{standard}}$$ is measured against a known reflectance standard. From $$R_d(\lambda)$$ you invert to recover $$\mu_a$$ and $$\mu_s'$$, typically using lookup tables built from Monte Carlo simulations of the specific probe geometry, since closed-form analytical models don't handle layered turbid media well.
 
-DRS is **the reference technique** — accurate, well-characterized, but not exactly portable. Probes are handheld (the Konica Minolta CM700d is a common form factor), but you still need a spectrometer and a controlled measurement environment.
+DRS is **the reference technique**, accurate, well-characterized, but not exactly portable. Probes are handheld (the Konica Minolta CM700d is a common form factor), but you still need a spectrometer and a controlled measurement environment.
 
 ## Measurement technique 2: Colorimetry and the Individual Typology Angle (ITA)
 
 Colorimeters trade spectral resolution for simplicity. They measure tristimulus values through broad-band filters, then convert to **CIELAB color space** under a standard illuminant (typically D65) and observer (10°). CIELAB encodes color as:
 
-- $$L^*$$ — lightness, 0 (black) to 100 (white)
-- $$a^*$$ — green (–) to red (+)
-- $$b^*$$ — blue (–) to yellow (+)
+- $$L^*$$, lightness, 0 (black) to 100 (white)
+- $$a^*$$, green (–) to red (+)
+- $$b^*$$, blue (–) to yellow (+)
 
 The widely used summary metric is the **Individual Typology Angle**:
 
@@ -111,19 +111,19 @@ $$
 \mathrm{ITA} = \frac{180}{\pi}\arctan\!\left(\frac{L^* - 50}{b^*}\right)
 $$
 
-ITA is the angle subtended from the reference point $$(L^*=50, b^*=0)$$ to the measured $$(L^*, b^*)$$ in the $$L^*$$–$$b^*$$ plane. Empirically, skin tones cluster along a banana-shaped curve in this plane — lighter tones in the upper-right region, darker tones lower-left. As melanin content increases, ITA decreases.
+ITA is the angle subtended from the reference point $$(L^*=50, b^*=0)$$ to the measured $$(L^*, b^*)$$ in the $$L^*$$–$$b^*$$ plane. Empirically, skin tones cluster along a banana-shaped curve in this plane, lighter tones in the upper-right region, darker tones lower-left. As melanin content increases, ITA decreases.
 
 ### The catch: ITA is blood-confounded
 
-This was the most interesting paper in the talk for me. Harunani et al. (SPIE 2025) used a [three-layer skin model](https://doi.org/10.1117/12.3044143) — epidermis, dermis, background — driven by published absorption and scattering spectra and inverted via the adding-doubling method. They asked a clean causal question: hold one chromophore constant, sweep the other, and see where the resulting reflectance lands in $$L^*$$–$$b^*$$.
+This was the most interesting paper in the talk for me. Harunani et al. (SPIE 2025) used a [three-layer skin model](https://doi.org/10.1117/12.3044143), epidermis, dermis, background, driven by published absorption and scattering spectra and inverted via the adding-doubling method. They asked a clean causal question: hold one chromophore constant, sweep the other, and see where the resulting reflectance lands in $$L^*$$–$$b^*$$.
 
 Two findings that change how you should think about ITA:
 
-1. **Iso-melanin curves form the empirical banana.** Holding melanin fixed and sweeping blood volume fraction (0.2%–7%) traces a smooth curve in $$L^*$$–$$b^*$$. Each melanin level produces its own non-overlapping curve. Stack the curves together and you reproduce the empirically observed banana — with low-melanin skin at the top and high-melanin skin at the bottom.
+1. **Iso-melanin curves form the empirical banana.** Holding melanin fixed and sweeping blood volume fraction (0.2%–7%) traces a smooth curve in $$L^*$$–$$b^*$$. Each melanin level produces its own non-overlapping curve. Stack the curves together and you reproduce the empirically observed banana, with low-melanin skin at the top and high-melanin skin at the bottom.
 
 2. **Blood volume slides points along those curves.** Vascular maneuvers (occlusion, congestion) change ITA without changing melanin at all. So ITA is a useful *summary*, but it's not a clean estimate of melanin specifically.
 
-Layer thickness matters too — but asymmetrically. Epidermal thickness (60→120 µm) shifts the whole distribution noticeably, while dermis thickness (1→2 mm) has a much smaller effect. Epidermal structure dominates color variation.
+Layer thickness matters too, but asymmetrically. Epidermal thickness (60→120 µm) shifts the whole distribution noticeably, while dermis thickness (1→2 mm) has a much smaller effect. Epidermal structure dominates color variation.
 
 The practical implication: if you actually want to infer chromophore concentrations from color, **use the iso-melanin / iso-blood family of curves rather than ITA alone**. ITA is a coarse one-dimensional projection of an inherently two-dimensional problem.
 
@@ -138,13 +138,13 @@ Burrow et al. (Biophoton. Discovery 2025) showed you can [approximate a professi
 5. Normalize by the D65 reference white and convert to **CIELAB** with the standard nonlinearity.
 6. Compute ITA per pixel and average across the ROI.
 
-Compared against a benchtop DSM-4 colorimeter, smartphone-derived ITA agreed reasonably well — but only under controlled conditions:
+Compared against a benchtop DSM-4 colorimeter, smartphone-derived ITA agreed reasonably well, but only under controlled conditions:
 
 - **Anatomic site matters.** The dorsal side of the finger spans a wider ITA range than the palmar side, making it more discriminative for skin-tone classification.
-- **Exposure drift.** As exposure increases, the ITA distribution shifts toward more positive values and broadens — your skin "lightens" numerically even though biology hasn't changed.
+- **Exposure drift.** As exposure increases, the ITA distribution shifts toward more positive values and broadens, your skin "lightens" numerically even though biology hasn't changed.
 - **Lighting matters.** The most stable agreement with the reference colorimeter came under **ambient lights off, flash off**, with exposure ≈ 0.7 in their setup.
 
-The takeaway: smartphone colorimetry is a feasible path to scalable, low-cost skin-tone assessment — but you have to *fix* exposure, geometry, white balance, and ambient lighting, and ideally calibrate per-device. A free-running auto-exposure smartphone capture is essentially uncalibrated.
+The takeaway: smartphone colorimetry is a feasible path to scalable, low-cost skin-tone assessment, but you have to *fix* exposure, geometry, white balance, and ambient lighting, and ideally calibrate per-device. A free-running auto-exposure smartphone capture is essentially uncalibrated.
 
 ## A note on Fitzpatrick and Monk
 
@@ -153,16 +153,16 @@ Two qualitative skin-color scales worth knowing about:
 - **Fitzpatrick (I–VI)**: classifies skin by its tanning/burning response to UV. Widely used in dermatology, but only six bins, with the upper end (V, VI) covering a huge range of darker pigmentations.
 - **Monk Scale (1–10)**: developed by Ellis Monk, [adopted by Google](https://skintone.google/) for technology evaluation. Ten shades, with broader coverage of darker tones. Research suggests it's more inclusive and more reliable for human-rater classification of medical and consumer technologies.
 
-Neither replaces a quantitative measurement (DRS, colorimeter, ITA), but Monk in particular is a reasonable choice when you need a discrete categorical variable — for stratifying clinical trials, training datasets, or human-rater protocols.
+Neither replaces a quantitative measurement (DRS, colorimeter, ITA), but Monk in particular is a reasonable choice when you need a discrete categorical variable, for stratifying clinical trials, training datasets, or human-rater protocols.
 
 ## Take Aways:
 
 - **The pulse-ox bias has a clean physical explanation.** It isn't a black box. Once you've sat with the melanin and hemoglobin absorption spectra, the bias is almost predictable.
 - **One number is rarely enough.** ITA is a one-dimensional summary of a two-dimensional space; collapsing $$L^*$$ and $$b^*$$ into a single angle confounds melanin with blood volume in ways that matter clinically.
-- **Practical smartphone-based measurement is feasible.** The hard part is consistency — fixed geometry, fixed exposure, controlled lighting. Anything that varies the optical path or the camera response variance becomes an uncontrolled covariate.
+- **Practical smartphone-based measurement is feasible.** The hard part is consistency, fixed geometry, fixed exposure, controlled lighting. Anything that varies the optical path or the camera response variance becomes an uncontrolled covariate.
 - **Calibration is upstream of fairness.** A lot of the conversation around algorithmic bias in medical imaging starts with the model. The deeper problem is often that the *measurement itself* is pigmentation-dependent before any algorithm sees the data.
 
-This is also why I find it useful in my own work to treat skin tone (and exposure, and finger curvature, and ambient light) as **first-class design variables** — not as nuisance factors to correct for downstream.
+This is also why I find it useful in my own work to treat skin tone (and exposure, and finger curvature, and ambient light) as **first-class design variables**, not as nuisance factors to correct for downstream.
 
 ---
 
