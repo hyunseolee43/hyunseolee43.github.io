@@ -1,7 +1,8 @@
 ---
 layout: about
-title: about
+title: home
 permalink: /
+nav_order: 1
 subtitle: <a href='https://www.bme.jhu.edu/'>Biomedical Engineering</a> PhD student, Johns Hopkins University.
 
 profile:
@@ -32,4 +33,4 @@ Hi, I'm Hyun Seo (Emily) Lee — a PhD student in [Biomedical Engineering](https
 - **Adaptive inference for medical vision** — efficient Vision Transformers that decide, per image, when to reduce tokens and when to exit early, allocating compute by difficulty while preserving diagnostic accuracy.
 - **Robust, equitable medical AI** — methods that hold up across skin tones and imaging conditions, from exposure-aware acquisition to skin-tone–aware augmentation.
 
-[**More about me →**](/experience/)
+[**More about me →**](/about/)

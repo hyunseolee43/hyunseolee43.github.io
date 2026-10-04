@@ -3,7 +3,7 @@ layout: page
 title: projects
 permalink: /projects/
 description: Selected research and engineering projects in computational optical imaging, medical AI, and biomedical device design.
-nav: true
+nav: false
 nav_order: 3
 display_categories: [work, fun]
 horizontal: false

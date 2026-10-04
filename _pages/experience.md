@@ -3,33 +3,79 @@ layout: page
 title: experience
 permalink: /experience/
 nav: true
-nav_order: 2
-description: A fuller look at my research, the things I've built, and the path that got me here.
+nav_order: 3
+description: My research, the things I've built, and where I've worked.
 ---
 
-I'm a biomedical engineer who likes turning research ideas into devices that actually reach patients. I earned my B.S. in Biomedical Engineering and Computer Science at Johns Hopkins, stayed for my master's, and am now a PhD student in the [Computational Biophotonics Lab](https://durr.jhu.edu/) with [Nicholas Durr](https://www.bme.jhu.edu/people/faculty/nicholas-durr/). What ties my work together is a focus on medical imaging and sensing that is efficient, affordable, and equitable across patient populations.
+<style>
+.xp { margin-top: 1.4rem; }
+.xp-item { border-left: 3px solid var(--global-theme-color, #0076df); padding-left: 1.1rem; margin-bottom: 1.8rem; }
+.xp-head { display:flex; flex-wrap:wrap; align-items:baseline; gap:.3rem; }
+.xp-role { font-weight:700; color: var(--global-text-color, #111); }
+.xp-org, .xp-org a { font-weight:600; color: var(--global-theme-color, #0076df); }
+.xp-date { margin-left:auto; font-size:.85rem; color: var(--global-text-color-light, #828282); white-space:nowrap; }
+.xp-theme { font-style:italic; color: var(--global-text-color-light, #828282); margin:.3rem 0 .55rem; }
+.xp-points { list-style:none; margin:0; padding:0; }
+.xp-points li { position:relative; padding-left:1.3rem; margin:.4rem 0; color: var(--global-text-color, #333); }
+.xp-points li::before { content:"→"; position:absolute; left:0; color: var(--global-theme-color, #0076df); }
+.chip { display:inline-block; margin-left:.35rem; padding:.03rem .4rem; font-size:.72rem; font-family: var(--global-code-font, monospace); color: var(--global-theme-color, #0076df); border:1px solid var(--global-theme-color, #0076df); border-radius:4px; white-space:nowrap; }
+</style>
 
-## Research
+<div class="xp">
 
-**Computational Biophotonics Lab, JHU — Graduate Researcher (2023–present).**
-I build a smartphone-based nailfold capillaroscopy system for non-invasive hemoglobin estimation. I designed the optical front end — green-LED back-illumination with a reverse-lens relay characterized at 25 lp/mm, enough to resolve 20 μm capillary loops — and worked onsite with Samsung Mobile imaging engineers to build an exposure-controlled, focus-swept acquisition pipeline that preserves capillary contrast across skin tones within the constraints of a stock phone camera. I ran a pilot study across light- and dark-skinned subjects and defined a skin-tone–aware acquisition protocol now used as the lab default, and I'm extending the pipeline with Monte Carlo light-transport models to map image contrast to capillary depth and hemoglobin concentration.
+<div class="xp-item">
+  <div class="xp-head"><span class="xp-role">Graduate Researcher</span> <span class="xp-org">· <a href="https://durr.jhu.edu/">Computational Biophotonics Lab, JHU</a></span> <span class="xp-date">2023 – Present</span></div>
+  <div class="xp-theme">Computational optical imaging for non-invasive, equitable diagnostics.</div>
+  <ul class="xp-points">
+    <li><b>Smartphone nailfold capillaroscopy:</b> designed a green-LED back-illuminated optical relay (25 lp/mm, resolving 20 μm capillary loops) for non-invasive hemoglobin estimation.</li>
+    <li><b>Skin-tone–aware acquisition:</b> partnered with Samsung Mobile engineers on an exposure- and focus-controlled pipeline that keeps capillary contrast usable across skin tones — now the lab default.</li>
+    <li><b>Light-transport modeling:</b> building Monte Carlo forward models that map image contrast to capillary depth and hemoglobin concentration.</li>
+  </ul>
+</div>
 
-**AI for Engineering & Medicine Lab, JHU — Graduate Researcher (2025–present).**
-With [Rama Chellappa](https://engineering.jhu.edu/faculty/rama-chellappa/), I led a unified adaptive-inference framework for medical Vision Transformers that combines token reduction with early exiting, using a lightweight predictor to decide per image whether to prune tokens or exit early. I built the training and profiling pipelines across five medical-imaging datasets; the work is a co-first-author paper at MIDL 2026.
+<div class="xp-item">
+  <div class="xp-head"><span class="xp-role">Graduate Researcher</span> <span class="xp-org">· <a href="https://engineering.jhu.edu/faculty/rama-chellappa/">AI for Engineering &amp; Medicine Lab, JHU</a></span> <span class="xp-date">2025 – Present</span></div>
+  <div class="xp-theme">Efficient and reliable medical vision models.</div>
+  <ul class="xp-points">
+    <li><b>Adaptive inference:</b> led a framework for medical Vision Transformers that decides, per image, when to reduce tokens and when to exit early — preserving diagnostic accuracy at a fraction of the compute. <span class="chip">MIDL 2026</span></li>
+  </ul>
+</div>
 
-## Building & industry
+<div class="xp-item">
+  <div class="xp-head"><span class="xp-role">Co-founder</span> <span class="xp-org">· OcuSound</span> <span class="xp-date">2023 – Present</span></div>
+  <div class="xp-theme">A low-cost at-home tonometer for glaucoma monitoring.</div>
+  <ul class="xp-points">
+    <li><b>Device &amp; signal processing:</b> drove the bill of materials below $100/unit and wrote the pipeline that extracts pressure-correlated features from acoustic and infrared signals.</li>
+    <li><b>Clinical study &amp; traction:</b> led an IRB-approved feasibility study at a partner clinic in India; raised $25K in non-dilutive funding and won 1st place at the Hopkins New Venture Challenge. <span class="chip">ARVO 2026</span></li>
+  </ul>
+</div>
 
-**OcuSound — Co-founder (2023–present).**
-I co-founded OcuSound to build a low-cost acoustic tonometer for at-home eye-pressure monitoring in glaucoma. I drove the bill of materials below $100 per unit, wrote the signal-processing pipeline that extracts pressure-correlated features, and led an IRB-approved feasibility study at a partner clinic in India. The project has raised $25,000 in non-dilutive funding and took 1st place in the Hopkins New Venture Challenge.
+<div class="xp-item">
+  <div class="xp-head"><span class="xp-role">R&amp;D New Product Development Intern</span> <span class="xp-org">· STERIS Endoscopy</span> <span class="xp-date">2024</span></div>
+  <ul class="xp-points">
+    <li>Redesigned SolidWorks test fixtures (−40% prep time) and built an automated test rig that cut manual data-tracking by 80% during reliability testing.</li>
+  </ul>
+</div>
 
-**STERIS Endoscopy — R&D New Product Development Intern (2024).**
-I redesigned custom test fixtures in SolidWorks, cutting fixture-prep time by 40%, and built an automated test rig that reduced manual data-tracking by 80% during reliability testing.
+<div class="xp-item">
+  <div class="xp-head"><span class="xp-role">Engineering Intern</span> <span class="xp-org">· Clear Guide Medical</span> <span class="xp-date">2023 – 2024</span></div>
+  <ul class="xp-points">
+    <li>Automated CNN-based needle segmentation in ultrasound to improve needle-track overlay, and built a LaTeX + Python documentation toolchain that cut audit-prep time by 30%.</li>
+  </ul>
+</div>
 
-**Clear Guide Medical — Engineering Intern (2023–2024).**
-I automated needle segmentation in ultrasound frames with a CNN classifier to improve needle-track overlay during interventional procedures, and built a LaTeX + Python documentation toolchain that cut audit-prep time by 30%.
+</div>
 
-## Beyond the lab
+## Selected projects
 
-I serve as Treasurer on the MedTech Network at Hopkins and previously co-led promotions for MedHacks. Outside of research, you'll find me playing volleyball and soccer, cafe hopping, bingeing Netflix, and cooking Korean food.
+- **Deep learning for melanoma diagnosis on darker skin (2025)** — style-transfer augmentation to counter skin-tone imbalance in a dermoscopy dataset, improving accuracy on the underrepresented subset.
+- **Sleep-apnea prevention device (2022–2023)** — capstone device delivering a controlled jaw-thrust within 60 seconds, iterated across three prototypes and 25 user interviews.
 
-For the formal version — full publications, awards, coursework, and skills — see my [CV](/cv/).
+## Leadership & service
+
+- Treasurer, The MedTech Network, JHU (2023–present)
+- Promotions Co-Lead, MedHacks, JHU (2022)
+
+## Skills
+
+Python (PyTorch, NumPy, OpenCV, timm, scikit-learn), C/C++, MATLAB, LaTeX · Vision Transformers, CNNs, token reduction, early-exit inference, dataset-bias analysis · Monte Carlo light-transport modeling (mcxyz, MCML) · SolidWorks, circuit design, 3D printing, Raspberry Pi and Arduino · smartphone camera characterization and optical, acoustic, and infrared sensing.
