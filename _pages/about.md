@@ -14,20 +14,22 @@ selected_papers: true
 social: true
 
 announcements:
-  enabled: true
+  enabled: false
   scrollable: true
   limit: 5
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true
   limit: 3
 ---
 
-Hi, welcome! I'm Hyun Seo (Emily), a first-year PhD student in [Biomedical Engineering](https://www.bme.jhu.edu/) at Johns Hopkins University, advised by [Nicholas Durr](https://www.bme.jhu.edu/people/faculty/nicholas-durr/) in the [Computational Biophotonics Lab](https://durr.jhu.edu/). I work at the intersection of **machine learning and medical imaging**, with a focus on building diagnostic and sensing systems that are efficient on edge devices, robust across patient populations and imaging conditions, and aware of their own uncertainty.
+Hi, I'm Hyun Seo (Emily) Lee — a PhD student in [Biomedical Engineering](https://www.bme.jhu.edu/) at Johns Hopkins University, advised by [Nicholas Durr](https://www.bme.jhu.edu/people/faculty/nicholas-durr/) in the [Computational Biophotonics Lab](https://durr.jhu.edu/). I work at the intersection of **machine learning and medical imaging**, building diagnostic and sensing systems that are efficient on edge devices, robust across patient populations, and aware of their own uncertainty.
 
-My current work spans two threads. The first is **computational optical imaging**: I'm developing a smartphone-based nailfold capillaroscopy system for non-invasive hemoglobin estimation, where sources of variability — skin tone, finger curvature, illumination — are treated as first-class design constraints rather than nuisances to correct for downstream. The second is **adaptive inference for medical vision**: I co-led a framework for medical Vision Transformers that combines token reduction with early exiting, allocating compute based on per-image difficulty while preserving diagnostic accuracy.
+#### What I work on
 
-Outside of research, I enjoy playing volleyball and soccer, bingeing Netflix shows, and cooking Korean food. Always happy to chat about computational imaging, robust medical AI, or how research ideas become devices that reach patients — feel free to [reach out](mailto:hslee343@gmail.com).
+- **Computational optical imaging** — a smartphone-based nailfold capillaroscopy system for non-invasive hemoglobin estimation, where skin tone, finger curvature, and illumination are treated as first-class design constraints rather than nuisances to correct for later.
+- **Adaptive inference for medical vision** — efficient Vision Transformers that decide, per image, when to reduce tokens and when to exit early, allocating compute by difficulty while preserving diagnostic accuracy.
+- **Robust, equitable medical AI** — methods that hold up across skin tones and imaging conditions, from exposure-aware acquisition to skin-tone–aware augmentation.
 
-**My interests:** Medical Imaging, Computational Optical Imaging, Nailfold Capillaroscopy, Vision Transformers, Smartphone Diagnostics, Robust Medical AI.
+[**More about me →**](/experience/)
