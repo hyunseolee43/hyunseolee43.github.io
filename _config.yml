@@ -12,7 +12,7 @@ description: > # the ">" symbol means to ignore newlines until "footer_text:"
   working on smartphone-based nailfold capillaroscopy and non-invasive hemoglobin estimation
   in Dr. Nicholas Durr's Computational Biophotonics Lab.
 footer_text: >
-keywords: academic-website, portfolio-website, BME PhD # add your own keywords or leave empty
+keywords: Hyun Seo Lee, Hyun Seo Emily Lee, Hyun Seo Lee JHU, Johns Hopkins, Johns Hopkins University, JHU, biomedical engineering, BME PhD, computational biophotonics, Durr Lab, nailfold capillaroscopy, medical imaging, machine learning # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: > # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -61,8 +61,8 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
 og_image: # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
@@ -261,8 +261,8 @@ display_categories: ["notes", "tutorials", "literature reviews"] # these categor
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Lee]
+  first_name: [Hyun Seo, Hyun S., H. S., H.]
 
   style: apa
   locale: en
