@@ -17,16 +17,16 @@
   contents:
     - title: Ph.D. in Biomedical Engineering
       institution: Johns Hopkins University, Baltimore, MD
-      year: August 2026 - Present
+      year: 2026 – Present
       description:
         - "Advisor: Nicholas Durr, Ph.D., Computational Biophotonics Lab."
         - "Research focus: smartphone-based nailfold capillaroscopy and Monte Carlo light-transport modeling for non-invasive hemoglobin estimation."
     - title: M.S.E. in Biomedical Engineering
       institution: Johns Hopkins University, Baltimore, MD
-      year: May 2026
+      year: 2026
     - title: B.S. in Biomedical Engineering and Computer Science
       institution: Johns Hopkins University, Baltimore, MD
-      year: August 2021 – May 2025
+      year: 2021 – 2025
       description:
         - GPA 3.90 / 4.00. Dean's List (all eligible semesters), Tau Beta Pi, Alpha Eta Mu Beta.
         - "Coursework: Biomedical Data Science, Computer Integrated Surgery, Machine Learning for Medical Applications, Deep Learning, Computer Vision, Data Structures, Artificial Intelligence."
@@ -44,7 +44,7 @@
   contents:
     - title: Graduate Researcher, Computational Biophotonics Lab
       institution: Johns Hopkins University · Advisor, Nicholas Durr, Ph.D.
-      year: March 2023 – Present
+      year: 2023 – Present
       description:
         - "Built a smartphone-based nailfold capillaroscopy system using green-LED back-illumination and a reverse-lens optical relay; characterized at 25 lp/mm resolution with field-of-view sufficient to resolve 20 μm capillary loops."
         - "Worked onsite with Samsung Mobile imaging engineers to characterize the production smartphone camera stack and proposed an exposure-controlled, auto-focus-swept acquisition pipeline that satisfied Samsung's stock-camera constraints while preserving capillary contrast across skin tones."
@@ -56,7 +56,7 @@
 
     - title: Graduate Researcher, Artificial Intelligence for Engineering and Medicine Lab
       institution: Johns Hopkins University · Advisor, Rama Chellappa, Ph.D.
-      year: May 2025 – Present
+      year: 2025 – Present
       description:
         - "Led design of a unified adaptive-inference framework for DeiT-S Vision Transformers (PyTorch, timm) that combines token reduction and early exit for medical image classification."
         - "Integrated four token-reduction strategies (EViT, Top-K, Random, ToMe) and trained a lightweight CNN redundancy predictor with dataset-specific confidence thresholds to decide per-image whether to prune tokens or exit early."
@@ -68,7 +68,7 @@
   contents:
     - title: Co-founder
       institution: OcuSound · Advisors, Nicholas Durr, Ph.D. and Kunal Parikh, Ph.D.
-      year: March 2023 – Present
+      year: 2023 – Present
       description:
         - "Designed a low-cost acoustic tonometer for at-home intraocular-pressure (IOP) monitoring, targeting longitudinal IOP tracking for glaucoma management."
         - "Drove BOM cost below $100 per unit through circuit redesign and component substitution while maintaining clinically relevant IOP correlation in benchtop validation."
@@ -79,7 +79,7 @@
 
     - title: R&D New Product Development Intern
       institution: STERIS Endoscopy, Conroe, TX · Advisor, Heba Hijazi
-      year: June 2024 – August 2024
+      year: 2024
       description:
         - "Redesigned custom test fixtures in SolidWorks, cutting fixture preparation time by 40% and standardizing setup across the new-product-development team."
         - "Built an automated test rig using solenoid valves and relays that reduced manual data-tracking effort by 80% during reliability testing."
@@ -87,7 +87,7 @@
 
     - title: Engineering Intern
       institution: Clear Guide Medical, Baltimore, MD · Advisor, Alican Demir, Ph.D.
-      year: May 2023 – May 2024
+      year: 2023 – 2024
       description:
         - "Automated needle-segmentation in ultrasound frames using Python and a CNN classifier to support more accurate needle-track overlay during interventional procedures."
         - "Built a LaTeX + Python documentation toolchain that cut audit-prep time by 30%."
@@ -97,14 +97,14 @@
   type: time_table
   contents:
     - title: Deep Learning for Melanoma Diagnosis on Dark-Skinned Patients
-      year: February 2025 – May 2025
+      year: 2025
       description:
         - "Built a VGG-19 style-transfer pipeline that synthesized darker-skinned augmentations of the ISIC dermoscopy dataset to address skin-tone class imbalance in melanoma classification."
         - "Trained a baseline + augmented classifier and compared per-Fitzpatrick-tone accuracy, showing a measurable accuracy gain on the underrepresented dark-skin subset."
         - "Implemented a Monk Skin Tone–based filter using Otsu thresholding to mask lesion artifacts during preprocessing."
 
     - title: Sleep Apnea Prevention Device
-      year: March 2022 – May 2023
+      year: 2022 – 2023
       description:
         - "Co-designed an undergraduate capstone device that delivers a controlled jaw-thrust within 60 s for patients with sleep-apnea-related breathing cessation."
         - "Conducted 25 user interviews and a literature review of jaw-positioning interventions to drive design requirements; iterated three prototype generations through user testing."
@@ -132,13 +132,13 @@
   contents:
     - title: Treasurer, Marketing Team
       institution: The MedTech Network, Johns Hopkins University
-      year: March 2023 – Present
+      year: 2023 – Present
       description:
         - "Managed annual budget for a 50-member organization and streamlined purchase-order workflow for executive events."
         - "Promoted 6 networking events that engaged 150+ students and generated 200+ industry contacts."
     - title: Promotional Team Co-Lead
       institution: MedHacks, Johns Hopkins University
-      year: June 2022 – August 2022
+      year: 2022
       description:
         - "Ran social-media outreach for a hackathon that hosted 200+ student participants."
         - "Designed event graphics in Photoshop and Adobe Fresco."
