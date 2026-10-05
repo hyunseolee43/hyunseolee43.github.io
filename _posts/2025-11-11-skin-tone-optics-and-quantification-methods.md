@@ -2,6 +2,7 @@
 layout: post
 title: Skin Tone Optics and Quantification Methods
 date: 2025-11-11 12:00
+thumbnail: /assets/img/posts/skin-tone/skin-layers.jpg
 description: Journal club on how light interacts with skin, why pulse oximeters under-perform on darkly pigmented patients, and how we can quantify skin pigmentation objectively.
 tags: optics biophotonics colorimetry journal-club
 categories: notes
