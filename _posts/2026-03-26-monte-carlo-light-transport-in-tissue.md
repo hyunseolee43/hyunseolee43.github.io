@@ -8,7 +8,7 @@ tags: optics biophotonics monte-carlo simulation journal-club
 categories: notes
 featured: false
 toc:
-  beginning: true
+  sidebar: right
 ---
 
 I gave a journal club talk this spring on **Monte Carlo simulation for modeling light transport in tissue**, more specificially on why simple analytical models break when we try to use them on a finger, what Monte Carlo actually does under the hood, and how it lets us simulate the photon paths through skin and capillaries that we care about for nailfold imaging. 
